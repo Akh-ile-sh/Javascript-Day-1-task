@@ -1,0 +1,28 @@
+=> What is HTTP?
+
+      HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance, text, layout description, images, videos, scripts, and more.
+
+
+=>HTTP1.1
+
+     HTTP1.1 has been the workhorse of the World Wide Web since its standardization in 1997. While it has served admirably, it comes with certain limitations that become apparent in today's dynamic web environment.
+		In HTTP1.1, multiple resources on a webpage are fetched sequentially, leading to latency issues. Each request has to wait for the previous one to complete, resulting in a slower page load time.
+		With every request, a significant amount of redundant headers is sent. This redundancy contributes to increased latency and higher bandwidth usage.
+		A browser can only establish a limited number of connections per domain, leading to a bottleneck in fetching resources. This limitation impacts the overall performance of a web page.
+
+
+=>HTTP2
+
+	Recognizing the limitations of HTTP1.1, the Internet Engineering Task Force (IETF) introduced HTTP2 in 2015, aiming to address the inefficiencies of its predecessor.
+	One of the key improvements in HTTP2 is multiplexing, which allows multiple requests and responses to be sent concurrently over a single connection. This parallel processing significantly reduces latency and accelerates page load times.
+	HTTP2 employs header compression to minimize redundant data, reducing the amount of information sent with each request. This results in more efficient use of bandwidth and faster data transmission.
+	Unlike the text-based format of HTTP1.1, HTTP2 uses a binary protocol. This enables more efficient parsing and reduces the likelihood of errors, contributing to a more robust and reliable communication channel.
+	HTTP2 introduces server push, allowing servers to proactively send resources to the client before they are explicitly requested. This feature helps optimize the loading of web pages by anticipating the client's needs.
+
+
+
+
+
+Conclusion:
+
+	the main difference between HTTP1.1 and HTTP2 is in how they handle data transfer on the web. HTTP1.1, the older version, fetches web page elements one at a time, causing delays and slower page loading. On the other hand, HTTP2 allows multiple elements to be sent and received simultaneously, making web pages load faster. HTTP2 also reduces redundancy in the information sent between the browser and the server, using clever techniques like header compression. These improvements result in a more efficient and quicker web browsing experience with HTTP2 compared to its predecessor, HTTP1.1.	
